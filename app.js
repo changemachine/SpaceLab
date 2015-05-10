@@ -95,5 +95,6 @@ spacelab.config(function($stateProvider) {
 var soundtrack = $("<audio id='soundtrack' src='audio/FoxSynergy_Blue_Space_08.mp3' autobuffer='auto' preload controls></audio>");
 $("#soundtrack").append(soundtrack);
 soundtrack.attr('autoplay','autoplay');
+soundtrack.attr('controls','controls');//TRYING TO GET CONTROLS TO SHOW
 
 // $('#soundtrack')[0].play();

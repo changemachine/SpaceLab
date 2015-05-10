@@ -13,7 +13,7 @@ spacelab.factory('InventoryFactory', function InventoryFactory() {
     //END OF INVENTORY LIST
 
     //ACTIONS
-    factory.door_open = 0;
+    factory.door_opened = 0;
     //END OF ACTIONS
 
     //PICKUP ITEMS
@@ -47,8 +47,9 @@ spacelab.factory('InventoryFactory', function InventoryFactory() {
     //END DROP ITEMS
 
     //ACTIONS
-    factory.open_door = function () {
-      factory.door_open = 1;
+    factory.open_door = function ($scope) {
+      factory.door_opened = 1;
+      $scope.door_quarters_msg = 'Locked!';
     };
     //END OF ACTIONS
 
