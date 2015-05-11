@@ -23,7 +23,7 @@ spacelab.config(function($stateProvider) {
   });
 
   $stateProvider.state('lights_on', {
-    url: '2',
+    url: 'main',
     views: {
       'scene': {
         templateUrl: 'partials/scene.html',
@@ -40,8 +40,8 @@ spacelab.config(function($stateProvider) {
     }
   });
 
-  $stateProvider.state('body_view', {
-    url: '3',
+  $stateProvider.state('pavels_body', {
+    url: 'pavels_body',
     views: {
       'scene': {
         templateUrl: 'partials/body_view.html',
@@ -58,8 +58,8 @@ spacelab.config(function($stateProvider) {
     }
   });
 
-  $stateProvider.state('crew_quarters', {
-    url: '4',
+  $stateProvider.state('quarters', {
+    url: 'quarters',
     views: {
       'scene': {
         templateUrl: 'partials/crew_quarters.html',

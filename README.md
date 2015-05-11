@@ -1,10 +1,16 @@
-# Space Lab
-
-#### May 7, 2015
-
+# Space Lab  #### May 7, 2015
+#### STATUS:
+##### Re-factored code:
+- Single pick-up function for items
+- Inventory as array
+- Door-unlock as inventory.indexOf search
+- Broke things in the process, but for a higher cause.
+To Do:
+- Find Kyles inventory logic and connect to array
 
 ### Developers
 John Franti, Reid Baldwin, James Nielson, Patrick Fiorentino, Kyle Bulloch & Brian Kropff
+
 
 
 ## Description

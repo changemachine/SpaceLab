@@ -28,7 +28,7 @@
         </div>
         <div class="modal-footer">
           <button class="btn btn-warning" type="button" data-dismiss="modal">Leave Item</button>
-          <button class="btn btn-success" type="button" ui-sref="lights_on" ng-click="pickup_knife()" data-dismiss="modal">Keep Item</button>
+          <button class="btn btn-success" type="button" ng-click="InventoryFactory.pickup('knife')" data-dismiss="modal">Keep Item</button>
         </div>
       </div>
     </div>
@@ -45,7 +45,7 @@
         </h3>
         <div class="modal-footer">
           <button class="btn btn-warning" type="button" data-dismiss="modal">Leave Item</button>
-          <button class="btn btn-success" type="button" ng-click="pickup_keycard()" data-dismiss="modal">Keep Item</button>
+          <button class="btn btn-success" type="button" ng-click="InventoryFactory.pickup('key_quarters')" data-dismiss="modal">Keep Item</button>
         </div>
       </div>
     </div>
@@ -62,7 +62,7 @@
         </div>
         <div class="modal-footer">
           <button class="btn btn-warning" type="button" data-dismiss="modal">Leave Item</button>
-          <button class="btn btn-success" type="button" ng-click="pickup_pda()" data-dismiss="modal">Keep Item</button>
+          <button class="btn btn-success" type="button" ng-click="InventoryFactory.pickup('pda')" data-dismiss="modal">Keep Item</button>
         </div>
       </div>
     </div>
@@ -79,7 +79,7 @@
         </div>
         <div class="modal-footer">
           <button class="btn btn-warning" type="button" data-dismiss="modal">Leave Area</button>
-          <button  id='enter_quarters'  ng-click="open_door()" class="btn btn-success" type="button" data-dismiss="modal">Enter</button>
+          <button  id='enter_quarters'  ng-click="InventoryFactory.open_door('key_quarters')" class="btn btn-success" type="button" data-dismiss="modal">Use Keycard</button>
         </div>
       </div>
     </div>

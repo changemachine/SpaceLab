@@ -10,13 +10,19 @@
 
   <map name="scene_murder_scene">
     <!-- light -->
-      <area alt="Red Warning Light" title="Warning Light" shape="rect" coords="1236,170,1116,130" />
+      <area alt="Red Warning Light" title="Warning Light" shape="rect" coords="1236,170,1116,130" href='#'/>
     <!-- green light -->
-      <area alt="Green Safety Light" title="Green Safety light" shape="rect" coords="107,58,156,170" />
+      <area alt="Green Safety Light" title="Green Safety light" shape="rect" coords="107,58,156,170" href='#' />
     <!-- body -->
-      <area alt="Pavel is in trouble!" title="Pavel is in trouble!" ui-sref='body_view' shape="poly" coords="322,572,327,526,522,540,771,595,735,639,364,600" />
+      <area alt="Pavel is in trouble!" title="Pavel is in trouble!" ui-sref='pavels_body' shape="poly" coords="322,572,327,526,522,540,771,595,735,639,364,600"  href='#'/>
     <!-- doorway -->
-    <area alt="Hatchway" title="Hatchway" ui-sref='quarters' shape="poly" coords="484,280,504,334,541,367,637,368,678,332,692,254,665,195,607,164,541,174,497,209" data-toggle="modal" data-target="#door"/>  </map>
+    <area alt="Hatchway" title="Hatchway" data-target="#door" shape="circle" data-toggle="modal" coords="590, 270, 120" href='#'/>
+  </map>
 
+
+  <map name="enter_quarters">
+    <!-- doorway -->
+    <area alt="Open Door" title="Open Door" href='#' ui-sref='quarters' shape="circle" coords="590, 270, 120"/>
+  </map>
 
 </div>
