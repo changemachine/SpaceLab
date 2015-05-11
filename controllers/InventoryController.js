@@ -10,8 +10,7 @@ spacelab.controller('InventoryCtrl', function InventoryCtrl($scope, InventoryFac
   };
 
 
-
-// OBSOLETE.  DATA LOGIC BELONGS IN FACTORY.  CONTROLLER BINDS DATA TO VIEW
+// OBSOLETE.  DATA LOGIC BELONGS IN FACTORY.
   // InventoryFactory.open_door = function() {
   //   if (InventoryFactory.keycard === 1) {
   //     InventoryFactory.door_opened = 1;

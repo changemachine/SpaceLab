@@ -1,18 +1,21 @@
 spacelab.factory('InventoryFactory', function InventoryFactory() {
     var factory = {};
 
+
+    //  = = = = = = = PLOT STATES = = = = = = = = = = = = = = = = = = = = = = =
     factory.inventory = [];
-
-    //STATES
     factory.door_opened = 0;
-    //END OF STATES
+    //  = = = = = = =  END PLOT STATES  = = = = = = = = = = = = = = = = = = = =
 
-    //ACTIONS
+    // = = = = = = = ACTIONS = = = = = = = = = = = = = = = = = = = = = = = = = =
     factory.pickup = function (item) {
-      factory.inventory.push(item);
-      console.log(factory.inventory);
+      if (factory.inventory.indexOf(item) === -1) {
+        factory.inventory.push(item);
+      }
+      // factory.inventory.push(item); //Allows multiples
+      console.log(item);
+      console.log(factory.inventory.indexOf(item));
     };
-
     factory.open_door = function (key) {
       // if (factory.door_opened === 1) { destination = 'quarters'; } = = = BYPASS DIALOG, ENTER ROOM IF DOOR HAS BEEN OPENED
       // if (factory.keycards === 0) { $scope.door_msg = 'Locked!'; }  = = = CHANGE MESSAGE ON DOOR DIALOG = = =
@@ -21,12 +24,16 @@ spacelab.factory('InventoryFactory', function InventoryFactory() {
       if (factory.inventory.indexOf(key) !== -1) {
         factory.door_opened = 1;
       }
-      console.log('door_opened = ' + factory.door_opened);
-      console.log('door key: ' + key);
+      // console.log('door_opened = ' + factory.door_opened);  console.log('door key: ' + key);
     };
-    //END OF ACTIONS
+    // = = = = = = = /ACTIONS = = = = = = = = = = = = = = = = = = = = = = = = =
 
-
+    // = = = = = = = SERVICES = = = = = = = = = = = = = = = = = = = = = = = = =
+    factory.findItem = function(item) {
+      factory.inventory.indexOf(item);
+      // console.log('findItem(item) = ' + item);  console.log('indexOf(item) = ' + factory.inventory.indexOf(item));
+    };
+    // = = = = = = = /SERVICES = = = = = = = = = = = = = = = = = = = = = = = = =
 
 
 

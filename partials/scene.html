@@ -1,10 +1,10 @@
 <div id='scene'>
 
-  <img src="IMG/Open_Door.png" alt="Doorway" style='position: absolute' ng-show="InventoryFactory.door_opened" usemap="#scene_murder_scene" no-repeat>
+  <img src="IMG/Open_Door.png" alt="Doorway" style='position: absolute' ng-show="InventoryFactory.door_opened" usemap="#scene_murder_scene">
 
-  <img src="IMG/Main_Room_no_knife.png" alt="Main Room" style='position: absolute' usemap="#scene_murder_scene" usemap="#scene_murder_scene" no-repeat>
+  <img src="IMG/Main_Room_no_knife.png" alt="Main Room" style='position: absolute' usemap="#scene_murder_scene" usemap="#scene_murder_scene">
 
-  <img src="IMG/Knife.png" alt="Knife in Pavel" style='position: absolute' ng-hide="knife" usemap="#scene_murder_scene"  no-repeat>
+  <img src="IMG/Knife.png" alt="Knife in Pavel" style='position: absolute' ng-hide="InventoryFactory.inventory.indexOf('knife')!=-1" usemap="#scene_murder_scene">
 
 
 
